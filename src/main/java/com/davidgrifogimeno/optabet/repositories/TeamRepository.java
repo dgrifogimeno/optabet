@@ -10,7 +10,7 @@ import com.davidgrifogimeno.optabet.models.Team;
 @Repository
 public interface TeamRepository extends JpaRepository<Team, Long> {
     
-    @Query(value = "SELECT totalGoals FROM teams t WHERE t.id = :id", nativeQuery = true)
+    @Query(value = "SELECT total_goals FROM teams t WHERE t.id = :id", nativeQuery = true)
     public int getTotalGoals(
         @Param("id") Long id
     );

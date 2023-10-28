@@ -18,7 +18,7 @@ public class TeamService {
         return (ArrayList<Team>) teamRepository.findAll();
     }
 
-    public int getTotalGoals(Team t) {
-        return teamRepository.getTotalGoals(t.getId());
+    public int getTotalGoals(Long teamId) {
+        return teamRepository.getTotalGoals(teamId);
     }
 }

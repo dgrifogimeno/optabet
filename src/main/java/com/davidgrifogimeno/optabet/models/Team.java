@@ -12,8 +12,11 @@ public class Team {
     private String name;
     private String code;
     private String form;
+    // column name: total_goals
     private int totalGoals;
+    // column name: favour_goals
     private int favourGoals;
+    // column name: against_goals
     private int againstGoals;
 
     public Team(Long id, String name, String code, String form, int totalGoals, int favourGoals, int againstGoals) {

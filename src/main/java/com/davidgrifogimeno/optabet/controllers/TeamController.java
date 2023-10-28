@@ -17,7 +17,7 @@ public class TeamController {
     TeamService teamService;
 
     @GetMapping("/totalGoals")
-    public int getTotalGoals(@RequestParam (name = "team") Team t) {
-        return teamService.getTotalGoals(t);
+    public int getTotalGoals(@RequestParam (name = "teamId") Long teamId) {
+        return teamService.getTotalGoals(teamId);
     }
 }
